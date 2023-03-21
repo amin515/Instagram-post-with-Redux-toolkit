@@ -13,7 +13,6 @@ const CreatePost = () => {
     photo: "",
   });
 
-  console.log(input);
   // handle input change
 
   const handleInputchange = (e) => {
@@ -26,6 +25,7 @@ const CreatePost = () => {
   // create post
   const handleCreatePost = () => {
     dispatch(createPost(input))
+    setModal(false)
   };
 
   return (

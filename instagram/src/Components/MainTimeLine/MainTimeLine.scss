@@ -1,0 +1,52 @@
+
+.timeline-content{
+    width: 100%;
+    background-color: #fff;
+   
+    .timeline-auth{
+        width: 600px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: var(--shadow-1);
+        margin-bottom: 10px;
+        .timeline-detailes{
+            .auth-profile{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                img{
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                }
+                span{
+                    font-size: 14px;
+                }
+            }
+        }
+        .timeline-posts{
+            
+            .post-content{
+                p{
+                    font-size: 14px;
+
+                }
+
+                img{
+                    width: 100%;
+                }
+            }
+            .post-reaction{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .reaction-items{
+                    display: flex;
+                    font-size: 20px;
+                    align-items: center;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

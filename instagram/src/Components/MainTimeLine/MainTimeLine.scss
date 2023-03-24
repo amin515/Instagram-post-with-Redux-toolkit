@@ -10,6 +10,18 @@
         box-shadow: var(--shadow-1);
         margin-bottom: 10px;
         .timeline-detailes{
+            position: relative;
+            .btn-close{
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                border: none;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                font-size: 30px;
+                cursor: pointer;
+            }
             .auth-profile{
                 display: flex;
                 align-items: center;

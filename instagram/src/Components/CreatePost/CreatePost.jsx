@@ -4,13 +4,19 @@ import { createPost } from "../../features/Timeline/timelineApi";
 import InstaModal from "../InstaModal/InstaModal";
 import "./CreatePost.scss";
 const CreatePost = () => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const [modal, setModal] = useState(false);
   const [input, setInput] = useState({
     auth_name: "",
     auth_photo: "",
     content: "",
     photo: "",
+    post_time: Date.now(),
+    reactions: {
+      love: 0,
+      like: 0,
+      dislike: 0,
+    },
   });
 
   // handle input change
@@ -24,8 +30,8 @@ const CreatePost = () => {
 
   // create post
   const handleCreatePost = () => {
-    dispatch(createPost(input))
-    setModal(false)
+    dispatch(createPost(input));
+    setModal(false);
   };
 
   return (
